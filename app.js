@@ -16,13 +16,13 @@ const phrases = [
 ];
 
 
-// listen for the start game button to be pressed
+// Listen for the start game button to be pressed
 startGame.addEventListener("click" , () => {
   overlay.style.display = "none";
 });
 
 
-// return a random phrase from an array
+// Return a random phrase from an array
 const getRandomPhraseAsArray = arr => {
   let randomNumber = Math.floor(Math.random() * arr.length);
   let randomPhrase = arr[randomNumber].split('');
@@ -33,7 +33,7 @@ getRandomPhraseAsArray(phrases);
 
 
 
-// adds the letters of a string to the display
+// Adds the letters of a string to the display
 const addPhraseToDisplay = arr => {
   for (let i = 0; i < arr.length; i++ ) {
       const li = document.createElement('li');
@@ -52,7 +52,7 @@ const phraseArray = getRandomPhraseAsArray(phrases);
 addPhraseToDisplay(phraseArray); 
 
 
-// check if a letter is in the phrase
+// Check if a letter is in the phrase
 const checkLetter = button => {
   let phraseList = ul.children;
   let match = null;
@@ -69,7 +69,7 @@ const checkLetter = button => {
 checkLetter(qwerty);
 
 
-// listen for the onscreen keyboard to be clicked
+// Listen for the onscreen keyboard to be clicked
 qwerty.addEventListener('click', e => {
   
   if (e.target.tagName === 'BUTTON') {  
