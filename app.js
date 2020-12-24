@@ -99,7 +99,7 @@ if (letter.length === show.length) {
    overlay.classList.add('win');
    overlay.querySelector('h2').textContent = "You won!";
    overlay.style.display = 'flex';
-   overlay.querySelector('a').textContent = 'Play Again!';
+   overlay.querySelector('a').textContent = 'Play Again?';
         resetGame();
     }
  
